@@ -30,6 +30,25 @@ class _HomeScreenState extends State<HomeScreen> {
               )
             ],
           )),
+      body: Column(
+        children: [
+          const SizedBox(height: 30),
+          Center(
+            child: Container(
+                child: Center(
+                  child: Text(
+                    'This is a Container',
+                    textScaleFactor: 2,
+                    style: TextStyle(color: Colors.white),
+                  ),
+                ),
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(10), color: greyColor),
+                height: 250,
+                width: 350),
+          ),
+        ],
+      ),
     );
   }
 }

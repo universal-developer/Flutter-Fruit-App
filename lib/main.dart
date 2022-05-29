@@ -15,10 +15,11 @@ class MyApp extends StatelessWidget {
         title: 'Flutter Demo',
         theme: ThemeData(
           useMaterial3: true,
+          scaffoldBackgroundColor: backgroundColor,
         ),
         darkTheme: ThemeData(
           brightness: Brightness.dark,
-          backgroundColor: backgroundColor,
+          scaffoldBackgroundColor: backgroundColor,
           useMaterial3: true,
         ),
         themeMode: ThemeMode.dark,
