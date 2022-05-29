@@ -25,7 +25,7 @@ class _HomeScreenState extends State<HomeScreen> {
               IconButton(
                   onPressed: () {}, icon: const Icon(CupertinoIcons.bag)),
               const SizedBox(width: 20),
-              CircleAvatar(
+              const CircleAvatar(
                 backgroundImage: AssetImage('assets/Profile.png'),
               )
             ],
@@ -33,22 +33,26 @@ class _HomeScreenState extends State<HomeScreen> {
       body: Column(
         children: [
           const SizedBox(height: 30),
-          Center(
-            child: Container(
-                child: Center(
-                  child: Text(
-                    'This is a Container',
-                    textScaleFactor: 2,
-                    style: TextStyle(color: Colors.white),
-                  ),
-                ),
-                decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(10), color: greyColor),
-                height: 250,
-                width: 350),
-          ),
+          _saleCard(),
         ],
       ),
     );
   }
+}
+
+Widget _saleCard() {
+  return Center(
+    child: Container(
+      decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(10), color: greyColor),
+      width: 350,
+      child: Column(
+        children: const [
+          Image(
+            image: AssetImage('assets/pineapple.png'),
+          ),
+        ],
+      ),
+    ),
+  );
 }
