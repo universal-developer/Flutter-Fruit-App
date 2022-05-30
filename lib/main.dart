@@ -14,10 +14,18 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
         title: 'Flutter Demo',
         theme: ThemeData(
+          splashColor: orangeColor,
+          hoverColor: orangeColor,
+          focusColor: orangeColor,
+          highlightColor: orangeColor,
           useMaterial3: true,
           scaffoldBackgroundColor: Colors.black87,
         ),
         darkTheme: ThemeData(
+          splashColor: orangeColor,
+          hoverColor: orangeColor,
+          focusColor: orangeColor,
+          highlightColor: orangeColor,
           brightness: Brightness.dark,
           scaffoldBackgroundColor: backgroundColor,
           useMaterial3: true,
