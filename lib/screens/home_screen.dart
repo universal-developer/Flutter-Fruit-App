@@ -122,6 +122,7 @@ Widget _saleCard() {
                   onPressed: () {},
                   style: ElevatedButton.styleFrom(
                     primary: Color(0xffF9A94A),
+                    onPrimary: Colors.black,
                     textStyle: const TextStyle(
                         fontSize: 17, fontWeight: FontWeight.bold),
                     shape: new RoundedRectangleBorder(
