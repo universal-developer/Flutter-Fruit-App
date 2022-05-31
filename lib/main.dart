@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
           focusColor: orangeColor,
           highlightColor: orangeColor,
           useMaterial3: true,
-          scaffoldBackgroundColor: Colors.black87,
+          scaffoldBackgroundColor: backgroundColor,
         ),
         darkTheme: ThemeData(
           splashColor: orangeColor,

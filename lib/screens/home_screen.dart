@@ -37,13 +37,47 @@ class _HomeScreenState extends State<HomeScreen> {
                   ))
             ],
           )),
-      body: Column(
-        children: [
-          const SizedBox(height: 30),
-          Center(
-            child: _saleCard(),
+      body: SingleChildScrollView(
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 20),
+          child: Column(
+            children: [
+              const SizedBox(height: 30),
+              Center(
+                child: _saleCard(),
+              ),
+              const SizedBox(height: 30),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text(
+                    'Recommended Fruits',
+                    style: TextStyle(
+                      fontSize: 18,
+                      color: lightGreyColor,
+                      fontWeight: FontWeight.w700,
+                    ),
+                  ),
+                  Row(
+                    children: [
+                      Text('View All',
+                          style: TextStyle(
+                            color: lightOrangeColor,
+                            fontWeight: FontWeight.w900,
+                          )),
+                      IconButton(
+                        onPressed: () {},
+                        icon: const Icon(CupertinoIcons.arrow_right),
+                        color: lightOrangeColor,
+                        splashRadius: 10,
+                      )
+                    ],
+                  ),
+                ],
+              ),
+            ],
           ),
-        ],
+        ),
       ),
     );
   }
@@ -108,7 +142,7 @@ Widget _saleCard() {
                     'In honor of World Health Day We’d like to give you this amazing offers.',
                     style: TextStyle(
                       fontSize: 15,
-                      color: Color.fromARGB(255, 235, 235, 245),
+                      color: lightGreyColor,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
