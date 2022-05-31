@@ -33,7 +33,7 @@ class _HomeScreenState extends State<HomeScreen> {
               InkWell(
                   onTap: () {},
                   child: const CircleAvatar(
-                    backgroundImage: AssetImage('assets/Profile.png'),
+                    backgroundImage: AssetImage('assets/profile.png'),
                   ))
             ],
           )),
@@ -75,6 +75,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                 ],
               ),
+              _product()
             ],
           ),
         ),
@@ -96,7 +97,7 @@ Widget _saleCard() {
           bottom: 0,
           child: Container(
             child: Image(
-              image: AssetImage('assets/pineapple.png'),
+              image: AssetImage('assets/fruits.png'),
             ),
           ),
         ),
@@ -173,6 +174,27 @@ Widget _saleCard() {
             ),
           ),
         ),
+      ],
+    ),
+  );
+}
+
+Widget _product() {
+  return Container(
+    decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(50), color: greyColor),
+    width: 350,
+    child: Stack(
+      children: [
+        Container(
+            decoration: const BoxDecoration(
+              color: Colors.black,
+              borderRadius: BorderRadius.only(
+                bottomLeft: Radius.circular(100),
+                bottomRight: Radius.circular(100),
+              ),
+            ),
+            child: Image(image: AssetImage("assets/pineapple.png"))),
       ],
     ),
   );
