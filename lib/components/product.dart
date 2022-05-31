@@ -1,14 +1,18 @@
+import 'dart:ffi';
+
 import 'package:flutter/material.dart';
 import 'package:fruit_app/colors.dart';
 import 'package:flutter/cupertino.dart';
 
 class ProductComponent extends StatelessWidget {
+  String image;
   String rate;
   String category;
   String name;
   String price;
 
   ProductComponent({
+    required this.image,
     required this.rate,
     required this.category,
     required this.name,
@@ -44,7 +48,7 @@ class ProductComponent extends StatelessWidget {
             child: Positioned(
               bottom: 100,
               child: Image(
-                image: AssetImage('assets/pineapples.png'),
+                image: AssetImage(image),
               ),
             ),
           ),
@@ -57,7 +61,7 @@ class ProductComponent extends StatelessWidget {
                   const Icon(CupertinoIcons.star_fill,
                       color: orangeColor, size: 15),
                   const SizedBox(width: 5),
-                  Text('5.0',
+                  Text(rate,
                       style:
                           TextStyle(fontWeight: FontWeight.bold, fontSize: 13))
                 ],
@@ -69,7 +73,7 @@ class ProductComponent extends StatelessWidget {
               top: 170,
               left: 15,
               child: Text(
-                'F R U I T',
+                category,
                 style: TextStyle(
                   fontSize: 15,
                   color: orangeColor,
@@ -83,7 +87,7 @@ class ProductComponent extends StatelessWidget {
               top: 195,
               left: 15,
               child: Text(
-                'Pineapple',
+                name,
                 style: TextStyle(fontWeight: FontWeight.bold, fontSize: 19),
               ),
             ),
@@ -93,7 +97,7 @@ class ProductComponent extends StatelessWidget {
               top: 225,
               left: 15,
               child: Text(
-                'Rp. 80.000',
+                price,
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 15,
@@ -105,7 +109,7 @@ class ProductComponent extends StatelessWidget {
           Container(
             child: Positioned(
               top: 233,
-              right: 5,
+              right: 10,
               child: Text(
                 'per kg',
                 style: TextStyle(
