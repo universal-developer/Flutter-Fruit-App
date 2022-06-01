@@ -5,6 +5,7 @@ import 'package:fruit_app/colors.dart';
 import 'package:flutter/cupertino.dart';
 
 class ProductComponent extends StatelessWidget {
+  Color productColor;
   String image;
   String rate;
   String category;
@@ -12,6 +13,7 @@ class ProductComponent extends StatelessWidget {
   String price;
 
   ProductComponent({
+    required this.productColor,
     required this.image,
     required this.rate,
     required this.category,
@@ -34,8 +36,8 @@ class ProductComponent extends StatelessWidget {
       child: Stack(
         children: [
           Container(
-            decoration: const BoxDecoration(
-              color: productOrangeColor,
+            decoration: BoxDecoration(
+              color: productColor,
               borderRadius: BorderRadius.only(
                 topLeft: Radius.circular(100),
                 topRight: Radius.circular(100),

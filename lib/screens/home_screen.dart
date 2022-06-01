@@ -80,12 +80,14 @@ class _HomeScreenState extends State<HomeScreen> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   ProductComponent(
+                      productColor: lightOrangeColor,
                       image: 'assets/pineapples.png',
                       rate: '5.0',
                       category: 'F R U I T',
                       name: 'Pineapple',
                       price: 'RUB. 500'),
                   ProductComponent(
+                      productColor: redColor,
                       image: 'assets/apples.png',
                       rate: '4.7',
                       category: 'F R U I T',
