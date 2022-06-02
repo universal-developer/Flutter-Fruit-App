@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:fruit_app/colors.dart';
 import 'package:fruit_app/components/product.dart';
+import 'package:fruit_app/components/navbar.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -80,7 +81,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   ProductComponent(
-                      productColor: lightOrangeColor,
+                      productColor: productOrangeColor,
                       image: 'assets/pineapples.png',
                       rate: '5.0',
                       category: 'F R U I T',
@@ -99,6 +100,7 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
         ),
       ),
+      bottomNavigationBar: BottomNavBarFb2(),
     );
   }
 }
