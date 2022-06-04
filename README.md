@@ -20,8 +20,5 @@ flutter run
 <h2>Link on template: </h2>
 
 ```bash
-
 https://www.figma.com/file/fmokxxvz2PhPzhoiwzOFm0/Fruit-Shop-Mobile-App-UI-(Community)?node-id=1%3A335
-
 ```
-
