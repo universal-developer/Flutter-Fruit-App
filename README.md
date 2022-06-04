@@ -11,6 +11,8 @@
 
 git clone https://github.com/universal-developer/flutter-fruit-app
 
+cd flutter-fruit-app
+
 flutter run
 
 ```
