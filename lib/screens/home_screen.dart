@@ -51,7 +51,7 @@ class _HomeScreenState extends State<HomeScreen> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text(
+                  const Text(
                     'Recommended Fruits',
                     style: TextStyle(
                       fontSize: 18,
@@ -61,7 +61,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                   Row(
                     children: [
-                      Text('View All',
+                      const Text('View All',
                           style: TextStyle(
                             color: lightOrangeColor,
                             fontWeight: FontWeight.w900,
@@ -100,7 +100,7 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
         ),
       ),
-      bottomNavigationBar: BottomNavBarFb2(),
+      bottomNavigationBar: const BottomNavBarFb2(),
     );
   }
 }
@@ -117,12 +117,12 @@ Widget _saleCard() {
           left: 80,
           bottom: 0,
           child: Container(
-            child: Image(
+            child: const Image(
               image: AssetImage('assets/fruits.png'),
             ),
           ),
         ),
-        Container(
+        SizedBox(
           width: 270,
           height: 300,
           child: BackdropFilter(
@@ -134,7 +134,7 @@ Widget _saleCard() {
                 Container(
                   alignment: Alignment.centerLeft,
                   padding: const EdgeInsets.only(left: 20),
-                  child: Text(
+                  child: const Text(
                     'O F F E R',
                     style: TextStyle(
                       fontSize: 15,
@@ -147,7 +147,7 @@ Widget _saleCard() {
                 Container(
                   alignment: Alignment.centerLeft,
                   padding: const EdgeInsets.only(left: 20),
-                  child: Text(
+                  child: const Text(
                     'Discount up to 40% Off',
                     style: TextStyle(
                       fontSize: 19,
@@ -160,7 +160,7 @@ Widget _saleCard() {
                 Container(
                   alignment: Alignment.centerLeft,
                   padding: const EdgeInsets.only(left: 20),
-                  child: Text(
+                  child: const Text(
                     'In honor of World Health Day We’d like to give you this amazing offers.',
                     style: TextStyle(
                       fontSize: 15,
@@ -175,19 +175,19 @@ Widget _saleCard() {
                   width: 270,
                   height: 100,
                   child: ElevatedButton(
-                    child: const Text(
-                      'View Offers',
-                      style: TextStyle(color: Colors.black),
-                    ),
                     onPressed: () {},
                     style: ElevatedButton.styleFrom(
-                      primary: Color(0xffF9A94A),
+                      primary: const Color(0xffF9A94A),
                       onPrimary: Colors.black,
                       textStyle: const TextStyle(
                           fontSize: 17, fontWeight: FontWeight.bold),
-                      shape: new RoundedRectangleBorder(
-                        borderRadius: new BorderRadius.circular(10.0),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(10.0),
                       ),
+                    ),
+                    child: const Text(
+                      'View Offers',
+                      style: TextStyle(color: Colors.black),
                     ),
                   ),
                 ),
