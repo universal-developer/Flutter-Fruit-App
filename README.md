@@ -2,7 +2,7 @@
 
 <h2>Screens: </h2>
 
-<img src="git-images/1.png" height="350px"/><img src="git-images/2.png" height="350px"/>
+<p align="center"><img src="git-images/1.png" height="350px"/><img src="git-images/2.png" height="350px"/></p>
 
 
 <h2>Usage: </h2>
