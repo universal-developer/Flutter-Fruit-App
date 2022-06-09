@@ -9,9 +9,9 @@
 
 ```bash
 
-git clone https://github.com/universal-developer/flutter-fruit-app
+git clone https://github.com/universal-developer/Flutter-Fruit-App
 
-cd flutter-fruit-app
+cd Flutter-Fruit-App
 
 flutter pub get
 
